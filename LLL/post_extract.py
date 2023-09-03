@@ -33,7 +33,7 @@ def report(tw, tl):
     for count, child in enumerate(root[0]):
         if child.tag == 'item':
             tw['id'] = count
-
+ 
             for it in child:
 
                 if it.tag.lower() == 'title':
@@ -88,7 +88,5 @@ result = report(tw, tl)
 #     if a != 'n':
 #         next(result)
 #         print("te")
-
-            
 
 con.close()
